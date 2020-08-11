@@ -9,28 +9,33 @@ function validate(){
   if(name.length < 3){
     text = "Please Enter valid Name";
     error_message.innerHTML = text;
+    setTimeout(() => error_message.remove(), 5000);
     return false;
   }
   if(email.indexOf("@") == -1 || email.length < 6){
     text = "Please Enter valid Email";
     error_message.innerHTML = text;
+    setTimeout(() => error_message.remove(), 5000);
     return false;
   }
   if(isNaN(phone) || phone.length != 10){
     text = "Please Enter valid Phone Number";
     error_message.innerHTML = text;
+    setTimeout(() => error_message.remove(), 5000);
     return false;
   }
   if(message.length == 0){
     text = "Please Enter A Message";
     error_message.innerHTML = text;
+    setTimeout(() => error_message.remove(), 5000);
     return false;
   }
   if(message.length <= 10){
     text = "Please Enter More Than 10 Characters For the Message";
     error_message.innerHTML = text;
+    setTimeout(() => error_message.remove(), 5000);
     return false;
   }
-  alert("Form Submitted Successfully!");
+  alert(`Form submitted for ${name} with ${email} and ${phone}.The message was \"${message}\"`);
   return true;
 }
