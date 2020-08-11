@@ -1,0 +1,166 @@
+body{
+  background-image: linear-gradient(#004d40 , #006064 );
+}
+
+.orange{
+  color: #fcbb08;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+/* Navbar */
+.navbar {
+    background-color: black;
+    border-bottom: 3px solid rgb(247, 204, 14);
+}
+.navbar .social-media{
+    font-size: 1.9rem;
+}
+
+/*Jumbotron*/
+.jumbotron{
+  height: 575px;
+  background-image: url('./images/hello.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.jumbotron .information{
+  position: absolute;
+  right: 30px;
+  top: 75px;
+}
+
+
+/* About Me */
+.section .about_me .card{
+  background-color: #fcbb08;
+}
+.section .about_me .card .card-body .row .about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Education */
+.section .education .card{
+  background-color: #fcbb08;
+}
+.section .education .card .card-body ul{
+    list-style: none;
+}
+
+/* Projects */
+.section .projects .card{
+  background-color: #fcbb08;
+}
+.section .projects .card .project_body .row .card{
+  background-color: #80cbc4;
+  border: 3px solid black;
+}
+
+/* Achievements */
+.section .achievements .card .card-body ul{
+    list-style: none;
+}
+.section .achievements .card{
+  background-color: #fcbb08;
+}
+
+/* Form */
+  .section .contact_me .card{
+    background-color: #fcbb08;
+  }
+
+  .contact_me .card .row .form {
+    padding: 30px 40px;
+  }
+  
+  .contact_me .card .row .form-group {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  
+  .contact_me .card .row .form-group label {
+    color: #777;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .contact_me .card .row .form-group input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .contact_me .card .row .form-group input:focus {
+    outline: 0;
+    border-color: black;
+  }
+  .contact_me .card .row .form-group textarea:focus {
+    outline: 0;
+    border-color: black;
+  }
+
+@media only screen and (max-width: 991px) {
+    .navbar button{
+        visibility: hidden;
+    }
+    .navbar img{
+        visibility: hidden;
+    }
+  }
+
+  @media only screen and (max-width: 660px) {
+    .section .about_me .card .card-body .row .about{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    /*Jumbotron*/
+    .jumbotron{
+      height: 300px;
+    }
+  }
+
+  @media only screen and (max-width: 570px) {
+    /*Jumbotron*/
+    .jumbotron{
+      height: 175px;
+      background-image: url('./images/bg9.jpg');
+    }
+    .jumbotron .information{
+      position: unset;
+    }
+  }
+
+  @media only screen and (max-width: 329px) {
+    /*Jumbotron*/
+    .jumbotron{
+      height: 250px;
+      background-image: url('./images/bg7.jpg');
+    }
+    .jumbotron .information{
+      position: unset;
+    }
+    .navbar img{
+      visibility: visible;
+  }
+  }
